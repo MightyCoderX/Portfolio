@@ -27,7 +27,7 @@ body
     height: 72px;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 2rem;
+    padding: 0 10vw;
 }
 
 .logo
@@ -46,14 +46,14 @@ body
 
 .nav-links li + li
 {
-    margin-left: 2rem;
+    margin-left: 2vw;
 }
 
 .nav-links a
 {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 
 .hero
@@ -70,7 +70,6 @@ body
 .about-me
 {
     width: 500px;
-    padding: 0 2rem;
     color: white;
     text-align: left;
 }
