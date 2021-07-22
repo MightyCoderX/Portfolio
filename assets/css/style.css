@@ -40,3 +40,9 @@ section[class]
     height: 100vh;
     scroll-snap-align: center;
 }
+
+footer
+{
+    height: var(--header-height);
+    background-color: var(--header-height);
+}

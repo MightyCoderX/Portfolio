@@ -20,10 +20,11 @@
 
 .logo
 {
-    font-family: 'Zen Tokyo Zoo', cursive;
+    font-family: 'Monoton', cursive;
     font-size: 2.5rem;
     display: grid;
     place-items: center;
+    font-weight: 400;
 }
 
 .nav-links

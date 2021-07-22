@@ -28,7 +28,6 @@ navTrigger.addEventListener('click', () =>
 
 document.addEventListener('click', e =>
 {
-    console.log(e.path);
     if(navLinks.classList.contains('shown') && !navbar.contains(e.target))
     {
         navLinks.classList.remove('shown');
