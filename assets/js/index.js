@@ -1,6 +1,7 @@
 const headerElem = document.querySelector('.header');
 const navLinks = document.querySelector('.nav-links');
 const navTrigger = document.getElementById('navTrigger');
+const navbar = document.getElementById('navbar');
 
 showHeader();
 
@@ -23,9 +24,13 @@ function showHeader()
 navTrigger.addEventListener('click', () =>
 {
     navLinks.classList.toggle('shown');
-    if(navLinks.classList.has('shown'))
+});
+
+document.addEventListener('click', e =>
+{
+    console.log(e.path);
+    if(navLinks.classList.contains('shown') && !navbar.contains(e.target))
     {
-        setTimeout(() =>, 100);
-        navTrigger.blur();
+        navLinks.classList.remove('shown');
     }
 });

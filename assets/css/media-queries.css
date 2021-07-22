@@ -1,0 +1,24 @@
+@media only screen and (min-width: 760px)
+{
+    .nav-links
+    {
+        clip-path: none;
+        flex-direction: row;
+        width: auto;
+        background: none;
+        padding: 0;
+        position: static;
+    }
+
+    .nav-links li + li
+    {
+        margin: 0;
+        margin-left: 2rem;
+    }
+
+    .nav-trigger
+    {
+        display: none;
+    }
+    
+}
