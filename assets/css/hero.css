@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-start;
-    padding: 0 5vw;
+    padding: 0 2rem;
     padding-top: var(--header-height);
     position: relative;
 }
