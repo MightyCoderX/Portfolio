@@ -1,0 +1,108 @@
+.header
+{
+    position: fixed;
+    z-index: 9999;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: var(--header-height);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    transition: background-color 0.2s ease-in;
+}
+
+.header.background
+{
+    background-color: var(--header-bg);
+    box-shadow: 0 0.1rem .5rem #0002;
+}
+
+.logo
+{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 2.5rem;
+}
+
+.nav-links
+{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    flex-direction: column;
+    clip-path: circle(0% at top right);
+    right: 0;
+    padding: var(--header-height) 0 2rem 0;
+    z-index: -1;
+    width: 100%;
+    background-color: var(--header-bg);
+    transition: clip-path 0.3s ease-out;
+}
+
+.nav-links.shown
+{
+    clip-path: circle(200% at top right);
+    transition-duration: 0.8s;
+}
+
+.nav-links li + li
+{
+    margin-top: 3vh;
+}
+
+.nav-links a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.nav-links a:hover,
+.nav-links a:focus
+{
+    mix-blend-mode: luminosity;
+}
+
+.nav-links .active
+{
+    font-weight: 400;
+}
+
+.nav-trigger
+{
+    position: fixed;
+    display: grid;
+    height: 62px;
+    width: 62px;
+    top: 0;
+    right: 2vw;
+    place-items: center;
+}
+
+.nav-trigger:hover .line,
+.nav-trigger:focus .line
+{
+    background-color: var(--accent-color);
+}
+
+.menu-icon
+{
+    width: 2rem;
+}
+
+.menu-icon .line
+{
+    width: 100%;
+    height: 3px;
+    background-color: #bbb;
+    border-radius: 1vh;
+}
+
+.menu-icon .line + .line
+{
+    margin-top: 5px;
+}

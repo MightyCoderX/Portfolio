@@ -23,4 +23,9 @@ function showHeader()
 navTrigger.addEventListener('click', () =>
 {
     navLinks.classList.toggle('shown');
+    if(navLinks.classList.has('shown'))
+    {
+        setTimeout(() =>, 100);
+        navTrigger.blur();
+    }
 });
