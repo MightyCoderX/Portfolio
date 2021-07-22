@@ -11,19 +11,25 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/hero.css">
+        <link rel="stylesheet" href="/assets/css/media-queries.css">
+
+        <script src="/assets/js/index.js" defer></script>
     </head>
     <body>
         <header class="header">
             <h1 class="logo">MC</h1>
             <nav>
-                <div class="burger-menu">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div id="navTrigger" class="nav-trigger" tabindex="0">
+                    <div class="menu-icon">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#hero">About Me</a></li>
+                    <li><a href="#hero" class="active">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contacts">Contacts</a></li>
@@ -31,8 +37,8 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
-                <div class="about-me-background"></div>
+            <section id="hero" class="hero">
+                <div class="about-me-bg"></div>
                 <div class="about-me">
                     <h1>Hello There</h1>
                     <p>
@@ -40,6 +46,15 @@
                         learn new things and practice what I can already do!
                     </p>
                 </div>
+            </section>
+            <section id="skills" class="skills">
+                
+            </section>
+            <section id="projects" class="projects">
+                
+            </section>
+            <section id="contacts" class="contacts">
+
             </section>
         </main>
     </body>
