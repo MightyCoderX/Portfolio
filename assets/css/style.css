@@ -10,8 +10,8 @@
 :root
 {
     --accent-color: hsl(218, 95%, 64%);
-    --primary-bg: hsl(218, 37%, 27%);
-    --header-bg: hsl(218, 37%, 20%);
+    --primary-bg: hsl(217, 36%, 10%);
+    --header-bg: hsl(217, 36%, 14%);
     --header-height: 72px;
 }
 
@@ -30,7 +30,7 @@ html
 body
 {
     font-family: 'Nunito', sans-serif;
-    
+    background: var(--primary-bg);
 }
 
 
@@ -44,5 +44,8 @@ section[class]
 footer
 {
     height: var(--header-height);
-    background-color: var(--header-height);
+    background-color: var(--header-bg);
+    color: #ddd;
+    display: grid;
+    place-items: center;
 }
