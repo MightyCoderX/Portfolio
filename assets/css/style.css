@@ -18,27 +18,27 @@
 html, body
 {
     width: 100%;
+}
+
+html
+{
     scroll-behavior: smooth;
+    scrollbar-arrow-color: aquamarine;
     scroll-padding-top: var(--header-height);
 }
 
 body
 {
     font-family: 'Nunito', sans-serif;
+    
 }
 
 
 /* Main */
 
-main
-{
-    scroll-snap-type: y mandatory;
-}
-
 section[class]
 {
     height: 100vh;
-    scroll-snap-align: center;
 }
 
 footer

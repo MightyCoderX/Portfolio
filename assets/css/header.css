@@ -48,7 +48,7 @@
 .nav-links.shown
 {
     clip-path: circle(200% at top right);
-    transition-duration: 0.8s;
+    transition-duration: 0.7s;
 }
 
 .nav-links li + li
@@ -61,7 +61,7 @@
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .nav-links a:hover,
@@ -113,7 +113,7 @@
 {
     width: 100%;
     height: 3px;
-    background-color: #bbb;
+    background-color: #ddd;
     border-radius: 1rem;
 }
 

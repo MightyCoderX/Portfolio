@@ -20,4 +20,41 @@
     {
         display: none;
     }
+    
+    .hero
+    {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .about-me-bg
+    {
+        height: 45%;
+        transform: translateY(-50%);
+        top: 51%;
+    }
+    
+    .about-me
+    {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .about-me h1
+    {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    .about-me p
+    {
+        font-size: 1.5rem;
+    }
+
+    .discover-more
+    {
+        bottom: 10vh;
+    }
 }
