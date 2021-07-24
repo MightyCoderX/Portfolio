@@ -8,11 +8,21 @@
         background: none;
         padding: 0;
         position: static;
+        opacity: 1;
+    }
+
+    .nav-links::after
+    {
+        content: none;
+    }
+
+    .nav-links li
+    {
+        margin: 0;
     }
 
     .nav-links li + li
     {
-        margin: 0;
         margin-left: 2rem;
     }
 
@@ -27,6 +37,7 @@
         justify-content: center;
         align-items: center;
         padding-top: 0;
+        text-align: center;
     }
 
     .about-me-bg
@@ -38,14 +49,13 @@
     
     .about-me
     {
-        text-align: center;
         margin-top: 0;
     }
 
     .about-me h1
     {
-        font-size: 5rem;
-        font-weight: 600;
+        font-size: 6rem;
+        margin: 0 auto;
     }
 
     .about-me p

@@ -9,7 +9,12 @@
 
 :root
 {
-    --accent-color: hsl(218, 95%, 64%);
+    --primary-color: hsl(220, 100%, 45%);
+    --title-gradient: linear-gradient(
+        90deg,
+        var(--primary-color),
+        hsl(194, 100%, 49%) 50%
+    );
     --primary-bg: hsl(217, 36%, 10%);
     --header-bg: hsl(217, 36%, 14%);
     --header-height: 72px;
@@ -33,6 +38,13 @@ body
     background: var(--primary-bg);
 }
 
+::selection
+{
+    background-color: hsla(194, 100%, 50%, 0.2);
+    color: white;
+    -webkit-text-fill-color: white;
+}
+
 
 /* Main */
 
@@ -48,4 +60,15 @@ footer
     color: #ddd;
     display: grid;
     place-items: center;
+    position: relative;
+}
+
+footer::after
+{
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 100%;
+    background-image: var(--title-gradient);
+    bottom: 0;
 }

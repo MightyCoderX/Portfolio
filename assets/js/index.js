@@ -13,6 +13,7 @@ const heroObserver = new IntersectionObserver(entries =>
 {
     entries.forEach(entry =>
     {
+        navLinks.classList.remove('shown');
         if(!entry.isIntersecting)
         {
             headerElem.classList.add('scrolled');
