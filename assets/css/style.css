@@ -82,6 +82,7 @@ section .title
 hr
 {
     border-color: #666;
+    opacity: 0.5;
 }
 
 section > hr
@@ -94,6 +95,7 @@ section + hr
 {
     width: 90%;
     margin: 0 auto;
+    opacity: 0.2;
 }
 
 footer

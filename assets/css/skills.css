@@ -22,16 +22,20 @@
     border-radius: 1rem;
 }
 
+.skill-card :is(ion-icon, img)
+{
+    --size: 6rem;
+    mix-blend-mode: color-dodge;
+}
+
 .skill-card ion-icon
 {
-    font-size: 6rem;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    font-size: var(--size);
     margin-bottom: 1rem;
-    color: #ccc;
+    color: #abb;
 }
 
 .skill-card img
 {
-    width: 6rem;
+    width: var(--size);
 }
