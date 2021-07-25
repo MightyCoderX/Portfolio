@@ -26,11 +26,11 @@
     border-radius: 1rem;
 }
 
-.skill-card img
+.skill-card ion-icon
 {
-    width: 100%;
+    font-size: 6rem;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    margin-bottom: 1.5em;
-    outline: 2px solid red;
+    margin-bottom: 1rem;
+    color: white;
 }
