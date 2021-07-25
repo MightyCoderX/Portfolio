@@ -9,7 +9,6 @@
     background-size: 100% 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding: 0 2rem;
     padding-top: var(--header-height);
     position: relative;
 }
@@ -38,15 +37,10 @@
 .about-me h1
 {
     font-family: 'Calibri', sans-serif;
-    font-weight: 500;
-    font-size: 17vw;
-    background-image: var(--title-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left: -0.3rem;
-    width: max-content;
+    font-weight: 600;
+    font-size: 15vw;
     margin-bottom: 1.5rem;
+    padding-right: 5px;
 }
 
 .about-me p

@@ -13,7 +13,7 @@
     --title-gradient: linear-gradient(
         90deg,
         var(--primary-color),
-        hsl(194, 100%, 49%) 50%
+        hsl(194, 100%, 50%) 50%
     );
     --primary-bg: hsl(217, 36%, 10%);
     --header-bg: hsl(217, 36%, 14%);
@@ -54,13 +54,21 @@ p
 
 /* Main */
 
-section
+:where(section)
 {
     min-height: 100vh;
     padding: 2rem;
 }
 
-section > .title
+section :is(.title, p, hr)
+{
+    text-align: center;
+    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section .title
 {
     font-size: 3rem;
     font-weight: 500;

@@ -1,5 +1,16 @@
 @media only screen and (min-width: 760px)
 {
+    section:not(.hero)
+    {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .header
+    {
+        padding: 0 2rem;
+    }
+
     .nav-links
     {
         clip-path: none;
@@ -30,6 +41,14 @@
     {
         display: none;
     }
+
+    .nav-trigger:hover .line,
+    .nav-trigger:focus-visible .line
+    {
+        background-color: var(--primary-color);
+        box-shadow: 0 0 10px #000;
+        opacity: 0.5;
+    }
     
     .hero
     {
@@ -55,7 +74,6 @@
     .about-me h1
     {
         font-size: 6rem;
-        margin: 0 auto;
     }
 
     .about-me p
@@ -66,13 +84,5 @@
     .discover-more
     {
         bottom: 10vh;
-    }
-
-    .skills :is(.title, p, hr)
-    {
-        text-align: center;
-        margin-inline: auto;
-        margin-left: auto;
-        margin-right: auto;
     }
 }

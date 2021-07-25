@@ -1,5 +1,6 @@
 .header
 {
+    --header-padding: 1.5rem;
     position: fixed;
     z-index: 9999;
     color: white;
@@ -8,7 +9,7 @@
     height: var(--header-height);
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding-left: 1.5rem;
     transition: background-color 0.2s ease-in;
 }
 
@@ -111,16 +112,8 @@
     aspect-ratio: 1/1;
     transform: translateY(-50%);
     top: 50%;
-    right: 2rem;
+    right: calc(var(--header-padding) - ((8vmax - 2rem) / 2));
     place-items: center;
-}
-
-.nav-trigger:hover .line,
-.nav-trigger:focus-visible .line
-{
-    background-color: var(--primary-color);
-    box-shadow: 0 0 10px #000;
-    opacity: 0.5;
 }
 
 .nav-trigger:focus
