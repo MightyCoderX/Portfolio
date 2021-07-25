@@ -39,7 +39,7 @@
 {
     font-family: 'Calibri', sans-serif;
     font-weight: 500;
-    font-size: 15vw;
+    font-size: 17vw;
     background-image: var(--title-gradient);
     -webkit-background-clip: text;
     background-clip: text;

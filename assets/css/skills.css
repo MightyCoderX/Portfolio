@@ -1,3 +1,36 @@
 .skills
 {
 }
+
+.intro
+{
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+    max-width: 50ch;
+}
+
+.skill-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.skill-card
+{
+    width: 120px;
+    height: auto;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.skill-card img
+{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 1.5em;
+    outline: 2px solid red;
+}

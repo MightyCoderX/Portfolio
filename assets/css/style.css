@@ -35,7 +35,13 @@ html
 body
 {
     font-family: 'Nunito', sans-serif;
-    background: var(--primary-bg);
+    background-color: var(--primary-bg);
+    color: #ddd;
+}
+
+p
+{
+    line-height: 1.6;
 }
 
 ::selection
@@ -48,9 +54,38 @@ body
 
 /* Main */
 
-section[class]
+section
 {
-    height: 100vh;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+section > .title
+{
+    font-size: 3rem;
+    font-weight: 500;
+    background-image: var(--title-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: max-content;
+}
+
+hr
+{
+    border-color: #666;
+}
+
+section > hr
+{
+    margin: 1.5em 0 1.5em 0;
+    width: 50vw;
+}
+
+section + hr
+{
+    width: 90%;
+    margin: 0 auto;
 }
 
 footer

@@ -67,4 +67,12 @@
     {
         bottom: 10vh;
     }
+
+    .skills :is(.title, p, hr)
+    {
+        text-align: center;
+        margin-inline: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

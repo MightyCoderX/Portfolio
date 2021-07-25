@@ -6,7 +6,7 @@ const heroElem = document.querySelector('.hero');
 const sectionElems = document.querySelectorAll('section[class]');
 
 const heroObserverOptions = {
-    rootMargin: "-50% 0px 0px 0px"
+    rootMargin: "-70% 0px 0px 0px"
 };
 
 const heroObserver = new IntersectionObserver(entries =>
