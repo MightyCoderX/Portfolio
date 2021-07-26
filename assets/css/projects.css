@@ -1,6 +1,6 @@
-.title
+.projects .title
 {
-    margin-bottom: 2rem;
+    margin-bottom: 1em;
 }
 
 .project-card
@@ -17,9 +17,7 @@
 {
     width: 100%;
     aspect-ratio: 16 / 9;
-    border: 1px solid #666;
     margin-bottom: 1rem;
-    background-color: #0007;
 }
 
 .project-name
