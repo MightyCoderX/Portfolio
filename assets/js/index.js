@@ -1,5 +1,5 @@
 const headerElem = document.querySelector('.header');
-const navLinks = document.querySelector('.nav-links');
+const ulNavLinks = document.querySelector('.nav-links');
 const navTrigger = document.getElementById('navTrigger');
 const navbar = document.getElementById('navbar');
 const heroElem = document.querySelector('.hero');
@@ -13,7 +13,7 @@ const heroObserver = new IntersectionObserver(entries =>
 {
     entries.forEach(entry =>
     {
-        navLinks.classList.remove('shown');
+        ulNavLinks.classList.remove('shown');
         if(!entry.isIntersecting)
         {
             headerElem.classList.add('scrolled');
@@ -27,34 +27,21 @@ const heroObserver = new IntersectionObserver(entries =>
 
 heroObserver.observe(heroElem);
 
-// showHeader();
-
-// window.addEventListener('scroll', showHeader);
-
-// function showHeader()
-// {
-//     if(scrollY>=headerElem.clientHeight)
-//     {
-//         headerElem.classList.add('background');
-//     }
-//     else
-//     {
-//         headerElem.classList.remove('background');
-//     }
-
-//     navLinks.classList.remove('shown');
-// }
-
 navTrigger.addEventListener('click', () =>
 {
-    navLinks.classList.toggle('shown');
+    ulNavLinks.classList.toggle('shown');
+});
+
+window.addEventListener('scroll', e =>
+{
+    ulNavLinks.classList.remove('shown');
 });
 
 document.addEventListener('click', e =>
 {
-    if(navLinks.classList.contains('shown') && !navbar.contains(e.target))
+    if(ulNavLinks.classList.contains('shown') && !navbar.contains(e.target))
     {
-        navLinks.classList.remove('shown');
+        ulNavLinks.classList.remove('shown');
     }
 });
 

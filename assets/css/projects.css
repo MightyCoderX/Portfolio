@@ -1,3 +1,39 @@
-.projects
+.title
 {
+    margin-bottom: 2rem;
+}
+
+.project-card
+{
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 0 10px #00000040;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project-card img
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid #666;
+    margin-bottom: 1rem;
+    background-color: #0007;
+}
+
+.project-name
+{
+    margin-bottom: 1rem;
+}
+
+.project-info
+{
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.learn-more
+{
+    
 }

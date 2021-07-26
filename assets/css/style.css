@@ -70,7 +70,7 @@ section :is(.title, p, hr)
 
 section .title
 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     background-image: var(--title-gradient);
     -webkit-background-clip: text;
@@ -96,6 +96,15 @@ section + hr
     width: 90%;
     margin: 0 auto;
     opacity: 0.2;
+}
+
+section .cards-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
 }
 
 footer

@@ -6,15 +6,6 @@
     letter-spacing: .05rem;
 }
 
-.skill-cards
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 3em;
-}
-
 .skill-card
 {
     width: 120px;
