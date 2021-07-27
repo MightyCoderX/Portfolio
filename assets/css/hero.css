@@ -36,11 +36,10 @@
 
 .about-me h1
 {
-    font-family: 'Calibri', sans-serif;
-    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     font-size: 15vw;
     margin-bottom: 1.5rem;
-    padding-right: 5px;
 }
 
 .about-me p
