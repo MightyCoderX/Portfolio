@@ -61,7 +61,9 @@ p
     overflow: hidden;
 }
 
-section :is(.title, p, hr)
+section > .title,
+section > p,
+section > hr
 {
     text-align: center;
     margin-left: auto;
@@ -100,7 +102,7 @@ section + hr
     opacity: 0.2;
 }
 
-section .cards-flex
+section :where(.cards-flex)
 {
     display: flex;
     flex-wrap: wrap;

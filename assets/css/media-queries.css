@@ -88,6 +88,49 @@
         bottom: 10vh;
     }
 
+    .project-card
+    {
+        display: flex;
+        width: 80%;
+        height: max-content;
+        flex-direction: row;
+        padding-bottom: 0;
+        justify-content: space-between;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .project-card:nth-child(even) img
+    {
+        order: 1;
+    }
+
+    .project-card img
+    {
+        flex-basis: 100%;
+        max-width: 50%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-bottom: 0;
+    }
+    
+    .project-card-content
+    {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .project-info
+    {
+        max-height: 25%;
+        width: 50%;
+        font-size: 1.2rem;
+    }
+
     .learn-more:hover
     {
         color: #202020;
@@ -113,7 +156,6 @@
     {
         inset: 100%;
     }
-
 
     .learn-more:active
     {

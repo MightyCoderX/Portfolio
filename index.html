@@ -85,6 +85,10 @@
                         <h3 class="skill-name">Java</h3>
                     </div>
                     <div class="skill-card">
+                        <ion-icon name="logo-nodejs"></ion-icon>
+                        <h3 class="skill-name">Node.js</h3>
+                    </div>
+                    <div class="skill-card">
                         <ion-icon name="logo-github"></ion-icon>
                         <h3 class="skill-name">GitHub</h3>
                     </div>
@@ -102,23 +106,38 @@
                 <h2 class="title">Projects</h2>
                 <div class="cards-flex project-cards">
                     <div class="project-card">
-                        <img src="/assets/img/projects/other_portfolio.png" alt="">
-                        <h3 class="project-name">My other portfolio</h3>
-                        <p class="project-info">It's the portfolio I made before this, under my nickname</p>
-                        <a href="https://github.com/MightyCoderX/mightycoderx.github.io" target="_blank" class="learn-more">Learn More</a>
+                        <img srcset="/assets/img/projects/other_portfolio.png 320w,
+                                     /assets/img/projects/other_portfolio_big.png 1366w"
+                             sizes="(min-width: 760px) 1366px, 320px"
+                             src="/assets/img/projects/other_portfolio_big.png" alt="MightyCoderX's Portfolio Screenshot">
+                        <div class="project-card-content">
+                            <h3 class="project-name">My other portfolio</h3>
+                            <p class="project-info">It's the portfolio I made before this, under my nickname</p>
+                            <a href="https://mightycoderx.github.io" target="_blank" class="learn-more" rel="noreferrer">See it in action!</a>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <img src="/assets/img/projects/lan_chat.png" alt="">
-                        <h3 class="project-name">LAN Chat</h3>
-                        <p class="project-info">A simple socket-based lan chat made with socket.io</p>
-                        <a href="#!" target="_blank" class="learn-more">Learn More</a>
+                        <img srcset="/assets/img/projects/lan_chat.png 320w,
+                                     /assets/img/projects/lan_chat_big.png 1366w"
+                             sizes="(min-width: 760px) 1366px, 320px"
+                             src="/assets/img/projects/lan_chat_big.png" alt="LAN Chat Screenshot">
+                        <div class="project-card-content">
+                            <h3 class="project-name">LAN Chat</h3>
+                            <p class="project-info">A simple socket-based lan chat made with socket.io</p>
+                            <a href="https://github.com/MightyCoderX/LAN-Chat" target="_blank" class="learn-more" rel="noreferrer">Github Repository</a>
+                        </div>
                     </div>
-                    <!-- <div class="project-card">
-                        <img src="/assets/img/vscode.svg" alt="">
-                        <h3 class="project-name">Project Name</h3>
-                        <p class="project-info">Some info about the Project</p>
-                        <a href="#!" target="_blank" class="learn-more">Learn More</a>
-                    </div> -->
+                    <div class="project-card">
+                        <img srcset="/assets/img/projects/live_edit.png 320w,
+                                     /assets/img/projects/live_edit_big.png 1366w"
+                             sizes="(min-width: 760px) 1366px, 320px"
+                             src="/assets/img/projects/live_edit_big.png" alt="LAN Chat Screenshot">
+                        <div class="project-card-content">
+                            <h3 class="project-name">MCX-LiveEdit</h3>
+                            <p class="project-info">An old live web editor I made some time ago</p>
+                            <a href="https://mightycoderx.github.io/MCX-LiveEdit/" target="_blank" class="learn-more" rel="noreferrer">See it in action!</a>
+                        </div>        
+                    </div>
                 </div>
             </section>
 
@@ -126,7 +145,16 @@
 
             <section id="contacts" class="contacts">
                 <h2 class="title">Contacts</h2>
-                <hr>
+                <div class="contacts-container">
+                    <div class="my-links">
+                        <ion-icon name="logo-github"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-"></ion-icon>
+                    </div>
+                    <form action="" class="contact-form">
+
+                    </form>
+                </div>
             </section>
         </main>
 
