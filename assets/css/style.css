@@ -56,7 +56,6 @@ p
 
 :where(section)
 {
-    min-height: 100vh;
     padding: 0 2rem;
     overflow: hidden;
 }

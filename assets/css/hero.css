@@ -1,7 +1,7 @@
 .hero
 {
     width: 100%;
-    min-height: 100vh;
+    max-height: 2000px;
     background-image: url('/assets/img/hero.jpg');
     background-color: #000a;
     background-blend-mode: multiply;
@@ -9,8 +9,10 @@
     background-size: 100% 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding-top: var(--header-height);
     position: relative;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 .about-me-bg
@@ -31,7 +33,7 @@
     max-width: 60ch;
     color: white;
     z-index: 2;
-    margin-top: 15vh;
+    margin-top: -10vh;
 }
 
 .about-me h1
@@ -52,7 +54,7 @@
 {
     position: absolute;
     transform: translateX(-50%);
-    bottom: 12vh;
+    bottom: 3rem;
     left: 50%;
     color: white;
     text-decoration: none;

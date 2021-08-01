@@ -5,6 +5,9 @@ const navbar = document.getElementById('navbar');
 const heroElem = document.querySelector('.hero');
 const sectionElems = document.querySelectorAll('section[class]');
 
+// For mobile browsers url bar
+heroElem.style.height = innerHeight + 'px';
+
 const heroObserverOptions = {
     rootMargin: "-70% 0px 0px 0px"
 };

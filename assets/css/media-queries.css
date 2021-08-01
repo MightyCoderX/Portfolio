@@ -49,26 +49,12 @@
         box-shadow: 0 0 10px #000;
         opacity: 0.5;
     }
-    
-    .hero
-    {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0;
-        text-align: center;
-    }
 
     .about-me-bg
     {
         height: 45%;
         transform: translateY(-50%);
         top: 52%;
-    }
-    
-    .about-me
-    {
-        margin-top: -10vh;
     }
 
     .about-me h1
