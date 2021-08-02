@@ -1,7 +1,7 @@
 .contacts
 {
     padding: 2rem;
-    min-height: ;
+    min-height: 100vh;
 }
 
 .contacts-container
@@ -47,23 +47,36 @@
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+    gap: 2rem;
 }
 
 .contact-form .field
 {
     position: relative;
-    margin-bottom: 1rem;
 }
 
-.contact-form .field input[type="text"]
+.contact-form .field :is(input[type="text"], input[type="email"], textarea)
 {
-    padding: 0.5rem 1rem;
-    width: 250px;
-    border-radius: 100vmax;
-    border: none;
     border: 2px solid #777;
     outline: none;
+    width: 250px;
     background-color: transparent;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.contact-form .field :is(input[type="text"], input[type="email"])
+{
+    border-radius: 100vmax;
+    padding: 0.7rem 1rem;
+}
+
+.contact-form .field textarea
+{
+    height: 250px;
+    padding: 0.7rem 1rem;
+    border-radius: 1rem;
+    resize: none;
 }
 
 .contact-form .field label
@@ -72,14 +85,28 @@
     color: #777;
     transform: translateY(-50%);
     top: 50%;
-    left: 1rem;
+    left: 0.9rem;
     font-weight: 600;
+    transition: all 0.1s linear;
 }
 
-.contact-form .field:focus-within label
+.contact-form .field:focus-within label,
+.contact-form .field :is(input[type="text"], input[type="email"]):valid:not(input[value=""]) + label
 {
     top: 0;
-    left: 1rem;
     font-size: 0.8rem;
-    z-index: 10;
+    padding: 0 0.3rem;
+    background: var(--primary-bg);
+}
+
+.contact-form .field.message label
+{
+    transform: initial;
+    top: 0.5rem;
+}
+
+.contact-form .field.message:focus-within label
+{
+    transform: translateY(-50%);
+    top: 0;
 }
