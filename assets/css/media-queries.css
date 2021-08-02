@@ -1,5 +1,11 @@
 @media only screen and (min-width: 760px)
 {
+    :root
+    {
+        --header-height: 12vh;
+    }
+
+
     section:not(.hero)
     {
         max-width: 70rem;
@@ -9,6 +15,7 @@
     .header
     {
         padding: 0 2rem;
+        max-height: 6rem;
     }
 
     .nav-links
@@ -48,6 +55,11 @@
         background-color: var(--primary-color);
         box-shadow: 0 0 10px #000;
         opacity: 0.5;
+    }
+
+    .hero
+    {
+        max-height: 1000px;
     }
 
     .about-me-bg
@@ -117,12 +129,12 @@
         font-size: 1.2rem;
     }
 
-    .learn-more:hover
+    .primary-btn:hover
     {
         color: #202020;
     }
 
-    .learn-more::before
+    .primary-btn::before
     {
         content: '';
         position: absolute;
@@ -133,17 +145,17 @@
         transition: 0.2s;
     }
     
-    .learn-more:active::before
+    .primary-btn:active::before
     {
         all: none;
     }
     
-    .learn-more:hover::before
+    .primary-btn:hover::before
     {
         inset: 100%;
     }
 
-    .learn-more:active
+    .primary-btn:active
     {
         opacity: 0.7;
     }

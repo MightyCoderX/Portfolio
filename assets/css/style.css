@@ -10,6 +10,7 @@
 :root
 {
     --primary-color: hsl(220, 100%, 45%);
+    --secondary-color: hsl(194, 100%, 50%) ;
     --title-gradient: linear-gradient(
         90deg,
         var(--primary-color),
@@ -53,6 +54,12 @@ p
 
 
 /* Main */
+
+/* main
+{
+    max-width: 900px;
+    margin: 0 auto;
+} */
 
 :where(section)
 {
@@ -108,6 +115,45 @@ section :where(.cards-flex)
     justify-content: center;
     align-items: center;
     gap: 3em;
+}
+
+.primary-btn
+{
+    all: initial;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-image: var(--title-gradient);
+    padding: 0.6em 1.5em;
+    border-radius: 100vw;
+    font-weight: 600;
+    box-shadow: 0 0 10px #000;
+    z-index: 1;
+    color: #ccc;
+    transition: 0.1s;
+    width: max-content;
+    font-family: inherit;
+}
+
+.primary-btn:active
+{
+    color: #202020;
+}
+
+.primary-btn::before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--primary-bg);
+    z-index: -1;
+    border-radius: 100vw;
+    transition: 0.2s;
+}
+
+.primary-btn:active::before
+{
+    inset: 100%;
 }
 
 footer
