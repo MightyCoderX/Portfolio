@@ -3,7 +3,12 @@
     padding-bottom: 2rem;
 }
 
-.intro
+.skills .title
+{
+    margin-bottom: 0.5em;
+}
+
+.skills .intro
 {
     font-size: 1.2rem;
     margin-bottom: 3em;

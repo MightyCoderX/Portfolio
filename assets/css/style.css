@@ -85,8 +85,8 @@ section .title
     background-clip: text;
     -webkit-text-fill-color: transparent;
     width: max-content;
-    margin-bottom: .5em;
-    margin-top: .5em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 hr
