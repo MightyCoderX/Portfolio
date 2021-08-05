@@ -6,6 +6,8 @@ const heroElem = document.querySelector('.hero');
 const sectionElems = document.querySelectorAll('section[class]');
 const contactForm = document.getElementById('contactForm');
 
+/* Header */
+
 // For mobile browsers url bar
 heroElem.style.height = innerHeight + 'px';
 
@@ -31,6 +33,9 @@ const heroObserver = new IntersectionObserver(entries =>
 
 heroObserver.observe(heroElem);
 
+
+/* Navbar */
+
 navTrigger.addEventListener('click', () =>
 {
     ulNavLinks.classList.toggle('shown');
@@ -41,6 +46,11 @@ window.addEventListener('scroll', e =>
     ulNavLinks.classList.remove('shown');
 });
 
+ulNavLinks.querySelectorAll('a').forEach(a =>
+{
+    a.addEventListener('click', () => ulNavLinks.classList.remove('shown'));
+});
+
 document.addEventListener('click', e =>
 {
     if(ulNavLinks.classList.contains('shown') && !navbar.contains(e.target))
@@ -48,6 +58,9 @@ document.addEventListener('click', e =>
         ulNavLinks.classList.remove('shown');
     }
 });
+
+
+/* Contact Form */
 
 contactForm.addEventListener('submit', e =>
 {
