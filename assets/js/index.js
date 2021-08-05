@@ -4,6 +4,7 @@ const navTrigger = document.getElementById('navTrigger');
 const navbar = document.getElementById('navbar');
 const heroElem = document.querySelector('.hero');
 const sectionElems = document.querySelectorAll('section[class]');
+const contactForm = document.getElementById('contactForm');
 
 // For mobile browsers url bar
 heroElem.style.height = innerHeight + 'px';
@@ -46,6 +47,39 @@ document.addEventListener('click', e =>
     {
         ulNavLinks.classList.remove('shown');
     }
+});
+
+contactForm.addEventListener('submit', e =>
+{
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const formStatusElem = document.createElement('p');
+    
+    
+    fetch(e.target.action,
+    {
+        method: e.target.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response =>
+    {
+        formStatusElem.style.color = 'green';
+        formStatusElem.innerText = 'Form submitted successfully!';
+        contactForm.reset();
+    })
+    .catch(err =>
+    {
+        formStatusElem.style.color = 'red';
+        formStatusElem.innerText = 'There was an error submitting the form!';
+    })
+    .finally(() =>
+    {
+        contactForm.insertBefore(formStatusElem, contactForm.lastElementChild);
+    });
+    
 });
 
 // function updateNav(section)
