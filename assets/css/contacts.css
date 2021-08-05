@@ -98,6 +98,7 @@
 {
     height: 25vh;
     min-height: 5rem;
+    max-height: 300px;
     resize: none;
     scroll-behavior: smooth;
 }

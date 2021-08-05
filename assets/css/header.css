@@ -4,13 +4,20 @@
     position: fixed;
     z-index: 9999;
     color: white;
-    display: flex;
     width: 100%;
     height: var(--header-height);
-    align-items: center;
-    justify-content: space-between;
     padding-left: 1.5rem;
     transition: background-color 0.2s ease-in;
+}
+
+.header-inner
+{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header.scrolled
@@ -30,15 +37,6 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.header.scrolled .logo
-{
-    background-image: none;
-    -webkit-background-clip: none;
-    background-clip: none;
-    -webkit-text-fill-color: initial;
-    color: white;
 }
 
 .nav-links
