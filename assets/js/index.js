@@ -8,9 +8,6 @@ const contactForm = document.getElementById('contactForm');
 
 /* Header */
 
-// For mobile browsers url bar
-heroElem.style.height = innerHeight + 'px';
-
 const heroObserverOptions = {
     rootMargin: "-70% 0px 0px 0px"
 };
