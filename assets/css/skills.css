@@ -18,31 +18,27 @@
 
 .skill-card
 {
+    --icon-size: 6rem;
+
     width: 120px;
-    height: 120px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .skill-card :is(ion-icon, img)
 {
-    --size: 6rem;
     mix-blend-mode: color-dodge;
+    margin-bottom: 1rem;
 }
 
 .skill-card ion-icon
 {
-    font-size: var(--size);
-    margin-bottom: 1rem;
+    font-size: var(--icon-size);
     color: #abb;
 }
 
 .skill-card img
 {
-    width: var(--size);
+    width: var(--icon-size);
 }
 
 .skill-name
