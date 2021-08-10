@@ -27,6 +27,10 @@
         <script src="/assets/js/index.js" defer></script>
         <script>
             document.documentElement.style.setProperty('--inner-height', innerHeight + 'px');
+            window.addEventListener('resize', () =>
+            {
+                document.documentElement.style.setProperty('--inner-height', innerHeight + 'px');
+            });
         </script>
     </head>
     <body>

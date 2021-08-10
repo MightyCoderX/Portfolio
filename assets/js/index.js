@@ -89,7 +89,6 @@ contactForm.addEventListener('submit', e =>
     {
         contactForm.insertBefore(formStatusElem, contactForm.lastElementChild);
     });
-    
 });
 
 // function updateNav(section)
