@@ -133,6 +133,7 @@ section :where(.cards-flex)
     transition: 0.1s;
     width: max-content;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .primary-btn:active
