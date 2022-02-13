@@ -46,21 +46,32 @@
 
 .about-me p
 {
-    font-size: 1.2rem;
     font-weight: 300;
+}
+
+.scroll-down
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 2em;
+    left: 50%;
+    text-decoration: none;
+    gap: 1em;
 }
 
 .discover-more
 {
-    position: absolute;
-    transform: translateX(-50%);
-    bottom: 3rem;
-    left: 50%;
     color: white;
     text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.1em;
 }
 
-.discover-more::after
+/* .discover-more::after
 {
     content: '';
     position: absolute;
@@ -72,4 +83,51 @@
     border-width: 0.2em 0.2em 0 0;
     height: 0.8em;
     width: 0.8em;
+} */
+
+.scroll-indicator
+{
+    position: relative;
+    --bg: white; 
+    width: 1.5em;
+    height: 3.2em;
+    border-radius: 100vh;
+    border: 0.15em solid var(--bg);
+    box-shadow: 
+        0 0 1em #fff7 inset,
+        0 0 2em #fff6;
+}
+
+.scroll-indicator::before
+{
+    content: '';
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 100vh;
+    position: absolute;
+    top: 0.3em;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: var(--bg);
+    animation-name: bob;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bob
+{
+    50%
+    {
+        opacity: 0.1;
+    }
+
+    100%
+    {
+        top: calc(100% - 1em);
+        opacity: 0;
+        transform: translateX(-50%) scale(0.8);
+    }
 }
