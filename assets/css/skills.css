@@ -5,7 +5,7 @@
 
 .skills .title
 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 .skills .intro
@@ -13,7 +13,6 @@
     font-size: 1.2rem;
     margin-bottom: 3em;
     max-width: 30ch;
-    letter-spacing: .05rem;
 }
 
 .skill-card
