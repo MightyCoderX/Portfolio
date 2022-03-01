@@ -23,15 +23,15 @@
 
 .project-name
 {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .project-info
 {
     color: #bbb;
-    padding: 0 1rem;
-    margin-bottom: 2rem;
-    font-size: 0.95rem;
+    padding: 0 1em;
+    margin-bottom: 2em;
+    font-size: 0.9rem;
     text-overflow: ellipsis;
     overflow: hidden;
     display: block;

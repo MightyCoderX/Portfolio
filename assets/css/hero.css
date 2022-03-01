@@ -30,23 +30,27 @@
 {
     isolation: isolate;
     height: max-content;
-    max-width: 60ch;
+    width: 100%;
     color: white;
     z-index: 2;
     margin-top: -10vh;
+    overflow: hidden;
 }
 
 .about-me h1
 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    font-size: 15vw;
-    margin: 0 auto .05em;
+    font-weight: 600;
+    font-size: 10vh;
+    margin: 0 auto 0.3em;
+    line-height: 1.2;
 }
 
 .about-me p
 {
     font-weight: 300;
+    font-size: 3.5vmin;
+    max-width: min(60ch, 80%);
+    margin: 0 auto;
 }
 
 .scroll-down
